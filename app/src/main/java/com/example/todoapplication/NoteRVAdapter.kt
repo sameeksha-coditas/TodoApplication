@@ -10,15 +10,14 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import com.example.todoapplication.R.color.*
+import com.example.todoapplication.R.color.green
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import java.util.*
 
 class NoteRVAdapter(private val noteList: ArrayList<Note>) : Adapter<NoteRVAdapter.MyViewHolder>() {
     private lateinit var database: DatabaseReference
 
-        class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val cardView: CardView = itemView.findViewById(R.id.cardView)
         val noteTitle: TextView = itemView.findViewById(R.id.idTVNoteTitle)
         val noteTimeStamp: TextView = itemView.findViewById(R.id.idTVTimeStamp)
@@ -56,12 +55,12 @@ class NoteRVAdapter(private val noteList: ArrayList<Note>) : Adapter<NoteRVAdapt
         }
 
 
-        Log.i("ArrayList",noteList[position].toString()+" Adapter")
-        val isDone= noteList[position].Completed
-        Log.i("ArrayList",isDone.toString())
+        Log.i("ArrayList", noteList[position].toString() + " Adapter")
+        val isDone = noteList[position].Completed
+        Log.i("ArrayList", isDone.toString())
 
         holder.done.setOnClickListener {
-            Log.i("ArrayList","$isDone OnClickListener")
+            Log.i("ArrayList", "$isDone OnClickListener")
             val titleNote = noteList[position].title
             if (titleNote != null) {
                 if (isDone != null) {
@@ -72,8 +71,7 @@ class NoteRVAdapter(private val noteList: ArrayList<Note>) : Adapter<NoteRVAdapt
             }
 
         }
-        if(isDone=="yes")
-        {
+        if (isDone == "yes") {
             holder.cardView.setBackgroundResource(green)
             holder.done.setImageResource(R.drawable.donetask)
         }
