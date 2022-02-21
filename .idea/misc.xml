@@ -6,17 +6,26 @@
         <entry key="..\:/Users/coditas/AndroidStudioProjects/NotesAppDemo/app/src/main/res/layout/activity_add_edit_note.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/NotesAppDemo/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/NotesAppDemo/app/src/main/res/layout/note_rv_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/android.xml" value="0.1" />
+        <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/corner.xml" value="0.1" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/done_all.xml" value="0.113" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/ic_check.xml" value="0.1" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/ic_delete.xml" value="0.1" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/ic_done.xml" value="0.1" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/ic_done_all.xml" value="0.1" />
+        <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/drawable/rules.xml" value="0.1" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/font/lato_bold.xml" value="0.1" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/abs.xml" value="0.1796875" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/activity_add_edit_note.xml" value="0.22" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/fragment_about.xml" value="0.1796875" />
+        <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/fragment_rules.xml" value="0.1796875" />
+        <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/nav_header.xml" value="0.1796875" />
         <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/layout/note_rv_item.xml" value="0.1796875" />
+        <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/menu/navdrawer_menu.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/menu/overflow_menu.xml" value="0.1796875" />
+        <entry key="..\:/Users/coditas/AndroidStudioProjects/TodoApplication/app/src/main/res/menu/winner_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

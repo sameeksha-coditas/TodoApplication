@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NotesAppDemo">
+        android:theme="@style/Theme.NotesAppDemo"
+        >
         <activity
             android:name="com.example.todoapplication.MainActivity"
             android:exported="true">

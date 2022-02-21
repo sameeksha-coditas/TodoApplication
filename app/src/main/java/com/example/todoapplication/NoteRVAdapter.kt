@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.todoapplication.R.color.green
@@ -72,7 +73,10 @@ class NoteRVAdapter(private val noteList: ArrayList<Note>) : Adapter<NoteRVAdapt
 
         }
         if (isDone == "yes") {
-            holder.cardView.setBackgroundResource(green)
+          // holder.cardView.setBackgroundResource(R.drawable.corner)
+               holder.cardView.setCardBackgroundColor(ContextCompat.getColor(holder.cardView.context, green))
+
+            //holder.cardView.setBackgroundResource(green)
             holder.done.setImageResource(R.drawable.donetask)
         }
 

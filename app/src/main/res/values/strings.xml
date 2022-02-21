@@ -12,4 +12,11 @@
     <string name="save_note">Save Note</string>
     <string name="task_completed_or_not_enter_yes_or_no">Task Completed or Not? Enter yes or no</string>
 
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="about">About</string>
+
 </resources>
