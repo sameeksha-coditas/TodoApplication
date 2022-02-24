@@ -78,6 +78,7 @@ class NoteRVAdapter(private val noteList: ArrayList<Note>) : Adapter<NoteRVAdapt
 
             //holder.cardView.setBackgroundResource(green)
             holder.done.setImageResource(R.drawable.donetask)
+
         }
 
 
