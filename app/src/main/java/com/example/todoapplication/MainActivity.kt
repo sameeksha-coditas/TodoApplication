@@ -6,6 +6,7 @@ import android.text.Html
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.database.*
+import kotlin.properties.Delegates
 
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +28,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
     private lateinit var navView: NavigationView
+    private lateinit var RemainingTask: TextView
+   var count:Int=0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        RemainingTask=findViewById(R.id.idTVRemainingTasks)
         drawerLayout = findViewById(R.id.drawerLayout)
         navView=findViewById(R.id.navView)
         actionBarDrawerToggle =
@@ -55,6 +60,7 @@ class MainActivity : AppCompatActivity() {
         notesArrayList = arrayListOf()
         dbref = FirebaseDatabase.getInstance().getReference(Static.notes)
         getNotesData()
+//        RemainingTask.text= "Remaining Task( $count )"
 
         addFAB = findViewById(R.id.idFABAddNote)
         addFAB.setOnClickListener {
@@ -109,10 +115,16 @@ class MainActivity : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
                     notesArrayList.clear()
+                    count=0
                     for (noteSnapshot in snapshot.children) {
 
                         val note = noteSnapshot.getValue(Note::class.java)
                         Log.i("ArrayList", note.toString())
+                        if(note!!.Completed=="no")
+                        {
+                            count++
+                        }
+
 //                        if(notesArrayList.contains(note))
 //                        {
 //                            continue
@@ -127,6 +139,9 @@ class MainActivity : AppCompatActivity() {
                         "ArrayList",
                         "SIZE=" + notesArrayList.size.toString() + " three In getNotes() after for loop"
                     )
+
+                    Log.i("Count=",count.toString())
+                    this@MainActivity.RemainingTask.text= "Remaining Tasks( $count )"
 
 
                     notesArrayList.sortBy {

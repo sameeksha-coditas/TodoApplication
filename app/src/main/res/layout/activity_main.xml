@@ -14,11 +14,23 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:id="@+id/idTVRemainingTasks"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="15dp"
+    android:background="@color/white"
+    />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVNotes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/idTVRemainingTasks"
         android:background="@color/white"
         tools:ignore="SpeakableTextPresentCheck"
         tools:listitem="@layout/note_rv_item" />
